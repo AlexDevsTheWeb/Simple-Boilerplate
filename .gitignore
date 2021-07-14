@@ -1,0 +1,6 @@
+# Skip upload folders to git 
+node_modules/
+
+# Skip upload files to git
+/debug.log
+/package-lock.json

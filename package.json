@@ -1,0 +1,31 @@
+{
+  "name": "Simple-Boilerplate",
+  "version": "1.0.0",
+  "description": "This is my mini-bolierplate starting setup for every HTML+CSS+JS front-end projects. Instead of starting everytime from scratch with the same repetive little setup actions, this little projects will save a ton of time. I use VS Code as IDE so this boilerplate is based on the workflow with it.",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "autoprefixer": "^10.3.1",
+    "browser-sync": "^2.27.4",
+    "cssnano": "^5.0.6",
+    "dart-sass": "^1.25.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-terser": "^2.0.1",
+    "postcss": "^8.3.5",
+    "sass": "^1.35.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
