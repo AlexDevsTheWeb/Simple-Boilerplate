@@ -1,3 +1,4 @@
+@use '../util/'as *;
 // boilerplate set basic and default styles for everything projects
 
 html {
@@ -16,4 +17,16 @@ body {
   padding: 0;
   font-family: var(--font-main);
   line-height: var(--LH-main);
+  background-color: var(--back-light-gray);
+}
+
+.main-container {
+  max-width: rem(1200);
+  justify-content: center;
+  margin: 30px auto;
+  border: 1px solid var(--border);
+  border-radius: var(--borderradius);
+  background-color: var(--white);
+  box-shadow: var(--boxshadows);
+  padding: rem(20);
 }

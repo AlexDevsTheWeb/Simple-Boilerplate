@@ -1,5 +1,17 @@
 @use '../util/' as *;
 
+.card-wrapper{
+  display: flex;  
+  flex-direction: row;
+  border: 1px solid #000;
+  justify-content: center;
+}
+
 .card {
   padding: rem(20);
+  border: 1px solid var(--border);
+  border-radius: var(--borderradius);
+  box-shadow: var(--boxshadows);
+  margin: rem(20);
+  background-color: var(--light-card);
 }

@@ -1,0 +1,14 @@
+header {
+  background: var(--limegreen);
+  text-align: center;
+  z-index: 999;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--limegreen);
+    color: var(--white);
+}

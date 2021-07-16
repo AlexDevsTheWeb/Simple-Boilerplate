@@ -17,6 +17,19 @@ const browsersync = require('browser-sync').create();
 // Use dart-sass for @use
 //sass.compiler = require('dart-sass');
 
+// Sass Task NO MINI CSS
+function STYLECopy() {
+  return src('app/scss/style.scss', {
+      sourcemaps: true
+    })
+    .pipe(sass())
+    .pipe(postcss([autoprefixer()]))
+    .pipe(dest('dist/css', {
+      sourcemaps: '.'
+    }));
+}
+
+
 // Sass Task
 function STYLEMinCopy() {
   return src('app/scss/style.scss', {
@@ -72,12 +85,13 @@ function browsersyncReload(cb) {
 function watchTask() {
   watch('./*.html', browsersyncReload);
   watch(['app/scss/**/*.scss', 'app/assets/js/**/*.js'],
-    series(STYLEMinCopy, JSMinCopy, browsersyncReload));
+    series(STYLEMinCopy, STYLECopy, JSMinCopy, browsersyncReload));
 }
 
 // Default Gulp task
 exports.default = series(
   STYLEMinCopy,
+  STYLECopy,
   JSMinCopy,
   browsersyncServe,
   watchTask

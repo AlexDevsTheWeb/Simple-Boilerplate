@@ -1,0 +1,120 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  line-height: var(--LH-main);
+  background-color: var(--back-light-gray);
+}
+
+.main-container {
+  max-width: 75rem;
+  justify-content: center;
+  margin: 30px auto;
+  border: 1px solid var(--border);
+  border-radius: var(--borderradius);
+  background-color: var(--white);
+  box-shadow: var(--boxshadows);
+  padding: 1.25rem;
+}
+
+:root {
+  --borderradius: 5px;
+}
+
+:root {
+  --boxshadows: 1px 0 20px -12px #999;
+}
+
+:root {
+  --limegreen: hsl(163, 72%, 41%);
+  --brightred: hsl(356, 69%, 56%);
+  --facebook: hsl(208, 92%, 53%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram-start: hsl(37, 97%, 70%);
+  --instagram-end: hsl(329, 70%, 58%);
+  --youtube: hsl(348, 97%, 39%);
+  --toggle-bg-start: hsl(210, 78%, 56%);
+  --toggle-bg-end: hsl(146, 68%, 55%);
+  --toggle: hsl(230, 22%, 74%);
+  --dark-bg: hsl(230, 17%, 14%);
+  --dark-top-bg: hsl(232, 19%, 15%);
+  --dark-card: hsl(228, 28%, 20%);
+  --dark-text1: hsl(228, 34%, 66%);
+  --dark-text2: hsl(0, 0%, 100%);
+  --light-bg: hsl(0, 0%, 100%);
+  --light-top-bg: hsl(225, 100%, 98%);
+  --light-card: hsl(227, 47%, 96%);
+  --light-text1: hsl(228, 12%, 44%);
+  --light-text2: hsl(230, 17%, 14%);
+  --border: hsl(0, 0%, 87%);
+  --back-light-gray: hsl(0, 0%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+:root {
+  --font-main: "Open Sans", sans-serif;
+  --LH-main: 160%;
+  --LH-header: 120%;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #000;
+  justify-content: center;
+}
+
+.card {
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--borderradius);
+  box-shadow: var(--boxshadows);
+  margin: 1.25rem;
+  background-color: var(--light-card);
+}
+
+header {
+  background: var(--limegreen);
+  text-align: center;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--limegreen);
+  color: var(--white);
+}
+
+.toggle__button {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--toggle);
+}
+/*# sourceMappingURL=style.css.map */
